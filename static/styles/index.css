@@ -1,0 +1,119 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure text is displayed in Montserrat font */
+body, button, input, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Styling for the body */
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url("../static/images/back.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 50px;
+}
+
+/* Styling for the logo */
+.logo h1 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Styling for the menu links */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: crimson;
+}
+
+/* Styling for the content section */
+.content {
+    text-align: center;
+    color: white;
+    margin-top: 10%; /* Reduced top margin */
+}
+
+/* Styling for the main heading */
+.content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: white; /* Changed text color to white */
+}
+
+/* Styling for the detect span */
+.detect {
+    display: inline-block;
+    color: white; /* Changed text color for 'Detect Fake News' to crimson */
+}
+
+/* Styling for the form */
+.content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px; /* Added margin top for form */
+}
+
+/* Styling for the textarea input */
+.content form textarea {
+    width: 70%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white; /* Changed text color for input box */
+    font-size: 16px;
+    resize: none;
+}
+
+/* Styling for the submit button */
+.content form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content form button:hover {
+    background-color: darkred;
+}
+
+/* Styling for the redtext class */
+.redtext {
+    color: crimson;
+}
+
+.content form textarea::placeholder {
+    color: white; /* Changed placeholder text color to white */
+}

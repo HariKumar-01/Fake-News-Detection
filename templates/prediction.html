@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSearch - Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/prediction.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1><span class="redtext">S</span>afe<span class="redtext">S</span>earch</h1>   
+        </div>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Prediction Results</h1>
+        <div class="prediction">
+            <p>{{ prediction_text_LR }}</p>
+            <p>{{ prediction_text_DT }}</p>
+            <p>{{ prediction_text_GB }}</p>
+            <p>{{ prediction_text_RF }}</p>
+        </div>
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>

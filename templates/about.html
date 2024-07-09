@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SafeSearch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/about.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1><span class="redtext">S</span>afe<span class="redtext">S</span>earch</h1>   
+        </div>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>About SafeSearch</h1>
+        <div class="about-text">
+            <p>SafeSearch is a fake news detection tool designed to help users distinguish between credible and fabricated news articles.</p>
+            <p>We utilize machine learning models including Logistic Regression, Decision Trees, Gradient Boosting, and Random Forests, trained on a dataset of labeled news articles.</p>
+            <p>Fake news poses significant risks to society by spreading misinformation and influencing public opinion. SafeSearch aims to mitigate these risks by empowering users with tools to verify the authenticity of news sources.</p>
+        </div>
+    </div>
+</body>
+</html>

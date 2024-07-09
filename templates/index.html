@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSearch - Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1><span class="redtext">S</span>afe<span class="redtext">S</span>earch</h1>   
+        </div>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1><span class="detect">Detect Fake <span class="redtext">News</h1>
+        <form action="/predict" method="POST">
+            <textarea name="news" placeholder="Paste your news article here..." required></textarea>
+            <button type="submit">Check News</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure text is displayed in Montserrat font */
+body, button, input, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Styling for the body */
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url("../static/images/back.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 50px;
+}
+
+/* Styling for the logo */
+.logo h1 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Styling for the menu links */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: crimson;
+}
+
+/* Styling for the content section */
+.content {
+    text-align: center;
+    color: white;
+    margin-top: 10%; /* Reduced top margin */
+}
+
+/* Styling for headings */
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Styling for paragraphs in the contact info */
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Styling for the redtext class */
+.redtext {
+    color: crimson;
+}
